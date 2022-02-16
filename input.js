@@ -1,15 +1,15 @@
-const net = require('net');
-const {connect} = require("./client.js");
 let connection;
 
 // setup interface to handle user input from stdin
 const setupInput = function (conn) {
   connection = conn; 
+
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
   stdin.resume();
   stdin.on("data", handleUserInput); //handleUserInput callback
+
   return stdin;
 };
 

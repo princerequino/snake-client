@@ -33,4 +33,4 @@ const connect = function () {
 connect();
 
 
-module.exports = {connect};
+module.exports = { connect };

@@ -33,6 +33,17 @@ const handleUserInput = function (key) {
     // console.log("RIGHT"); // check to see if input is working
     connection.write('Move: right');
   }
+  if (key === '1' || key === '\u001bOP') { // 1 or F1
+    connection.write(`Say: EZ MODE `);
+  }
+  if (key === '2' || key === '\u001bOQ') { // 1 or F1
+    connection.write(`Say: Nice Try!`);
+  }
+  if (key === '3' || key === '\u001bOR') { // 1 or F1
+    connection.write('Say: LOL');
+  }
+
+
 };
 
 module.exports = { setupInput };

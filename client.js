@@ -12,11 +12,11 @@ const connect = function () {
     conn.write("Name: CPR");
   })
 
-  // for (let i = 0; i < 100; i++) {
-  //   setTimeout(() => {
-  //     conn.write("Move: up");
-  //   }, 500 * i);
-  // }
+  for (let i = 0; i < 100; i++) {
+    setTimeout(() => {
+      conn.write("Move: up");
+    }, 500 * i);
+  }
   
 
 

@@ -11,6 +11,12 @@ const connect = function () {
     console.log("Successfully connected to game server");
     conn.write("Name: CPR");
   })
+
+  // for (let i = 0; i < 100; i++) {
+  //   setTimeout(() => {
+  //     conn.write("Move: up");
+  //   }, 500 * i);
+  // }
   
 
 
